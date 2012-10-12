@@ -1,0 +1,279 @@
+/*
+	mucssle V1.0
+	Copyright 2012, Eric Smith
+	"pump your site uuuuuup."  sorry - my only Arnold joke, I promise.
+	
+	Clearly I would be nowhere without the help of 
+	Dave Gamache and www.getskeleton.com
+	
+	Free to use under the MIT license.
+	http://www.opensource.org/licenses/mit-license.php
+	10/12/2012
+
+
+	Table of Contents
+==================================================
+	#Customize with LESS
+    --
+	#Base Grid
+    #Media Queries
+    #Clearing
+	--    
+	#Your CSS
+    #Your Media Queries
+	
+*/
+/* #Customize with LESS - Pick Breakpoints that work for you - or leave the defaults, they are pretty cool as is.
+================================================== */
+/*
+Pick your widest breakpoint - typically is 960 - it's the thickest your container(s) will ever go
+*/
+/*
+Pick your breakdance point - typically this is 768 - from here on down, every column goes full-width
+*/
+/* #Base Grid - NO REAL NEED TO MODIFY THIS SECTION
+================================================== */
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+.column,
+.columns {
+  float: left;
+  display: inline;
+  margin-left: 1.0416666665% !important;
+  margin-right: 1.0416666665% !important;
+}
+.row {
+  margin-bottom: 2.083333333%;
+}
+/* Nested Column Classes */
+.column.alpha,
+.columns.alpha {
+  margin-left: 0!important;
+}
+.column.omega,
+.columns.omega {
+  margin-right: 0!important;
+}
+.column.alpha.omega,
+.columns.alpha.omega {
+  margin: 0!important;
+}
+.container {
+  /* Base Grid */
+
+  /* Offsets */
+
+}
+.container .one.column {
+  width: 4.166666666%;
+}
+.container .columns.two {
+  width: 10.416666665000001%;
+}
+.container .columns.three {
+  width: 16.666666664%;
+}
+.container .columns.four {
+  width: 22.916666663%;
+}
+.container .columns.five {
+  width: 29.166666662000004%;
+}
+.container .columns.six {
+  width: 35.416666661%;
+}
+.container .columns.seven {
+  width: 41.666666660000004%;
+}
+.container .columns.eight {
+  width: 47.916666659%;
+}
+.container .columns.nine {
+  width: 54.166666658%;
+}
+.container .columns.ten {
+  width: 60.41666665700001%;
+}
+.container .columns.eleven {
+  width: 66.666666656%;
+}
+.container .columns.twelve {
+  width: 72.916666655%;
+}
+.container .columns.thirteen {
+  width: 79.16666665400001%;
+}
+.container .columns.fourteen {
+  width: 85.41666665300001%;
+}
+.container .columns.fifteen {
+  width: 91.666666652%;
+}
+.container .columns.sixteen {
+  width: 97.91666665100001%;
+}
+.container .one-third.column {
+  width: 31.249999995%;
+}
+.container .two-thirds.column {
+  width: 64.583333323%;
+}
+.container .offset-by-one {
+  padding-left: 6.249999999%;
+}
+.container .offset-by-two {
+  padding-left: 12.499999998%;
+}
+.container .offset-by-three {
+  padding-left: 18.749999997%;
+}
+.container .offset-by-four {
+  padding-left: 24.999999996%;
+}
+.container .offset-by-five {
+  padding-left: 31.249999995%;
+}
+.container .offset-by-six {
+  padding-left: 37.499999994%;
+}
+.container .offset-by-seven {
+  padding-left: 43.749999993%;
+}
+.container .offset-by-eight {
+  padding-left: 49.999999992%;
+}
+.container .offset-by-nine {
+  padding-left: 56.249999990999996%;
+}
+.container .offset-by-ten {
+  padding-left: 62.49999999%;
+}
+.container .offset-by-eleven {
+  padding-left: 68.749999989%;
+}
+.container .offset-by-twelve {
+  padding-left: 74.999999988%;
+}
+.container .offset-by-thirteen {
+  padding-left: 81.249999987%;
+}
+.container .offset-by-fourteen {
+  padding-left: 87.499999986%;
+}
+.container .offset-by-fifteen {
+  padding-left: 93.749999985%;
+}
+/*  #Media Queries - NO REAL NEED TO MODIFY THIS SECTION
+================================================== */
+@media only screen and (max-width: 1199px) {
+  .container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .columns,
+  .column {
+    margin: 0!important;
+  }
+  .container {
+    width: 95.833333334%;
+  }
+  .container .column.one-third,
+  .container .column.two-thirds,
+  .container .column.one {
+    width: 100%;
+  }
+  .container .columns.two,
+  .container .columns.three,
+  .container .columns.four,
+  .container .columns.five,
+  .container .columns.six,
+  .container .columns.seven,
+  .container .columns.eight,
+  .container .columns.nine,
+  .container .columns.ten,
+  .container .columns.eleven,
+  .container .columns.twelve,
+  .container .columns.thirteen,
+  .container .columns.fourteen,
+  .container .columns.fifteen,
+  .container .columns.sixteen,
+  .container .columns.twenty,
+  .container .columns.twentyfour {
+    width: 100%;
+  }
+  /* Offsets */
+  .container .offset-by-one,
+  .container .offset-by-two,
+  .container .offset-by-three,
+  .container .offset-by-four,
+  .container .offset-by-five,
+  .container .offset-by-six,
+  .container .offset-by-seven,
+  .container .offset-by-eight,
+  .container .offset-by-nine,
+  .container .offset-by-ten,
+  .container .offset-by-eleven,
+  .container .offset-by-twelve,
+  .container .offset-by-thirteen,
+  .container .offset-by-fourteen,
+  .container .offset-by-fifteen {
+    padding-left: 0;
+  }
+}
+/* #Clearing - NO REAL NEED TO MODIFY THIS SECTION
+================================================== */
+/* Self Clearing Goodness */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/* Use clearfix class on parent to clear nested columns,
+    or wrap each row of columns in a <div class="row"> */
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+.row:after,
+.clearfix:after {
+  clear: both;
+}
+.row,
+.clearfix {
+  zoom: 1;
+}
+/* You can also use a <br class="clear" /> to clear columns */
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+/*  #Your CSS - Have fun, go nuts, rock your body tag.
+================================================== */
+/*  #Your Media Queries - Now it's your turn to break it on down
+================================================== */
+/* This is the tweener zone - between your widest point and your breakdance, so usually tablet or smaller screens */
+@media only screen and (max-width: 1199px) {
+  
+}
+/* Next is when all the columns go full width, typically on a mobile */
+@media only screen and (max-width: 767px) {
+  
+}
